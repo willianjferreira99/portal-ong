@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ONG Mãos Solidárias</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            ONG Mãos Solidárias
+        </div>
+
+<button class="menu-toggle"
+        aria-label="Abrir menu de navegação"
+        aria-expanded="false">
+    ☰
+</button> 
+
+        <nav aria-label="Menu principal">
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Início</a>
+                </li>
+
+                <li class="dropdown">
+
+                    <a href="projetos.html">Projetos</a>
+
+                    <ul class="submenu">
+
+                        <li>
+                            <a href="projetos.html">
+                                Campanhas
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="projetos.html">
+                                Voluntariado
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li>
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <h2>Transformando Vidas por Meio da Solidariedade</h2>
+
+            <p>
+                A ONG Mãos Solidárias promove ações sociais,
+                campanhas de arrecadação, projetos educacionais
+                e oportunidades de voluntariado para apoiar
+                comunidades em situação de vulnerabilidade.
+            </p>
+
+        </section>
+
+        <section class="container">
+
+            <div class="alert success">
+                Projeto social cadastrado com sucesso.
+            </div>
+
+            <div class="alert info">
+                Novas oportunidades de voluntariado disponíveis.
+            </div>
+
+        </section>
+
+        <section class="cards">
+
+            <div class="card">
+
+                <span class="badge badge-ativo">
+                    Ativo
+                </span>
+
+                <h3>Arrecadação de Alimentos</h3>
+
+                <p>
+                    Campanha destinada ao recebimento e distribuição
+                    de alimentos para famílias em vulnerabilidade social.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <span class="badge badge-andamento">
+                    Em Andamento
+                </span>
+
+                <h3>Apoio Educacional</h3>
+
+                <p>
+                    Projeto de reforço escolar e acompanhamento
+                    para crianças e adolescentes.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <span class="badge badge-concluido">
+                    Concluído
+                </span>
+
+                <h3>Campanha do Agasalho</h3>
+
+                <p>
+                    Distribuição de roupas e cobertores para
+                    famílias atendidas pela instituição.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="hero">
+
+            <h2>Quem Somos</h2>
+
+            <p>
+                A ONG Mãos Solidárias atua promovendo inclusão social,
+                apoio comunitário e desenvolvimento humano por meio
+                de projetos sustentáveis e ações voluntárias.
+            </p>
+
+            <br>
+
+            <button id="abrirModal">
+                Saiba Mais
+            </button>
+
+        </section>
+
+    </main>
+
+    <!-- MODAL -->
+
+    <div class="modal"
+     id="modal"
+     role="dialog"
+     aria-modal="true"
+     aria-labelledby="titulo-modal">
+
+        <div class="modal-content">
+
+            <h2 id="titulo-modal">Sobre a ONG</h2>
+
+            <p>
+                Nossa missão é construir uma sociedade mais justa,
+                promovendo ações voltadas para educação,
+                assistência social e cidadania.
+            </p>
+
+            <br>
+
+            <button id="fecharModal">
+                Fechar
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- TOAST -->
+
+    <div id="toast" class="toast">
+
+        Cadastro realizado com sucesso!
+
+    </div>
+
+    <footer>
+
+        <p>
+            © 2026 ONG Mãos Solidárias - Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
